@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - BookShare</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">BookShare</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Início</a></li>
+                    <li><a href="perfil.html" class="hover:underline">Perfil</a></li>
+                    <li><a href="trocas.html" class="hover:underline">Trocas</a></li>
+                    <li><a href="mensagem.html" class="hover:underline">Mensagens</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 p-4">
+        <!-- Profile Details -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <img src="https://via.placeholder.com/150" alt="Foto de Perfil"
+                    class="w-32 h-32 rounded-full mb-4 lg:mb-0 lg:mr-4">
+                <div class="text-center lg:text-left">
+                    <h2 class="text-2xl font-bold">Nome do Usuário</h2>
+                    <p class="text-gray-600">Localização</p>
+                    <p class="text-gray-600">Biografia curta sobre o usuário...</p>
+                </div>
+                <div class="mt-4 lg:mt-0 lg:ml-auto">
+                    <button class="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">Editar
+                        Perfil</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- User's Books -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Meus Livros para Troca</h2>
+            <ul class="space-y-4">
+                <li class="flex items-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/100" alt="Capa do Livro" class="w-24 h-24 rounded-lg mr-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Título do Livro</h3>
+                        <p class="text-gray-600">Autor do Livro</p>
+                        <p class="text-gray-600">Descrição curta do livro...</p>
+                    </div>
+                </li>
+                <!-- Repita para mais livros -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 BookShare. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

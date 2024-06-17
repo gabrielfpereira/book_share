@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocas - BookShare</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">BookShare</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Início</a></li>
+                    <li><a href="perfil.html" class="hover:underline">Perfil</a></li>
+                    <li><a href="trocas.html" class="hover:underline">Trocas</a></li>
+                    <li><a href="mensagem.html" class="hover:underline">Mensagens</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 p-4">
+        <!-- Exchange Requests List -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Solicitações de Troca</h2>
+            <ul class="space-y-4">
+                <li class="flex flex-col lg:flex-row justify-between items-center p-4 bg-gray-100 rounded-lg shadow-md">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://via.placeholder.com/100" alt="Capa do Livro" class="w-24 h-24 rounded-lg">
+                        <div>
+                            <h3 class="text-lg font-bold">Título do Livro</h3>
+                            <p class="text-gray-600">Autor do Livro</p>
+                            <p class="text-gray-600">Solicitante: Nome do Usuário</p>
+                            <p class="text-gray-600">Mensagem: Gostaria de trocar pelo meu livro...</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mt-4 lg:mt-0">
+                        <button class="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">Aceitar</button>
+                        <button class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700">Recusar</button>
+                    </div>
+                </li>
+                <!-- Repita para mais solicitações de troca -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 BookShare. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
