@@ -11,18 +11,30 @@
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="bg-green-600 text-white py-4">
+    <header class="bg-white text-black py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">BookShare</h1>
-            <nav>
+            <img src="assets/logo-book-share.jpg" alt="Foto de Perfil" class="w-auto h-16  mb-4 lg:mb-0 lg:mr-4">
+            <nav class="hidden lg:flex">
                 <ul class="flex space-x-4">
-                    <li><a href="index.html" class="hover:underline">Início</a></li>
+                    <li><a href="test.html" class="hover:underline">Início</a></li>
                     <li><a href="perfil.html" class="hover:underline">Perfil</a></li>
                     <li><a href="trocas.html" class="hover:underline">Trocas</a></li>
                     <li><a href="mensagem.html" class="hover:underline">Mensagens</a></li>
                 </ul>
             </nav>
+            <button id="menu-btn" class="block lg:hidden text-white focus:outline-none mr-2">
+                <svg class="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
         </div>
+        <nav id="mobile-menu" class="hidden-menu flex flex-col space-y-2 mt-4 lg:hidden pl-2">
+            <a href="test.html" class="hover:underline">Início</a>
+            <a href="perfil.html" class="hover:underline">Perfil</a>
+            <a href="trocas.html" class="hover:underline">Trocas</a>
+            <a href="mensagem.html" class="hover:underline">Mensagens</a>
+        </nav>
     </header>
 
     <!-- Main Content -->
@@ -62,7 +74,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-green-600 text-white py-4 mt-8">
+    <footer class="bg-gray-700 text-white py-4 mt-8">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 BookShare. Todos os direitos reservados.</p>
         </div>

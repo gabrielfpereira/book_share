@@ -17,29 +17,29 @@
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="bg-green-600 text-white py-4">
+    <header class="bg-white text-black py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">BookShare</h1>
+            <img src="assets/logo-book-share.jpg" alt="Foto de Perfil" class="w-auto h-16  mb-4 lg:mb-0 lg:mr-4">
             <nav class="hidden lg:flex">
                 <ul class="flex space-x-4">
-                    <li><a href="#" class="hover:underline">Início</a></li>
+                    <li><a href="test.html" class="hover:underline">Início</a></li>
                     <li><a href="perfil.html" class="hover:underline">Perfil</a></li>
                     <li><a href="trocas.html" class="hover:underline">Trocas</a></li>
                     <li><a href="mensagem.html" class="hover:underline">Mensagens</a></li>
                 </ul>
             </nav>
-            <button id="menu-btn" class="block lg:hidden text-white focus:outline-none">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            <button id="menu-btn" class="block lg:hidden text-white focus:outline-none mr-2">
+                <svg class="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
         </div>
-        <nav id="mobile-menu" class="hidden-menu flex flex-col space-y-2 mt-4 lg:hidden">
-            <a href="#" class="hover:underline">Início</a>
-            <a href="#" class="hover:underline">Perfil</a>
-            <a href="#" class="hover:underline">Trocas</a>
-            <a href="#" class="hover:underline">Mensagens</a>
+        <nav id="mobile-menu" class="hidden-menu flex flex-col space-y-2 mt-4 lg:hidden pl-2">
+            <a href="test.html" class="hover:underline">Início</a>
+            <a href="perfil.html" class="hover:underline">Perfil</a>
+            <a href="trocas.html" class="hover:underline">Trocas</a>
+            <a href="mensagem.html" class="hover:underline">Mensagens</a>
         </nav>
     </header>
 
@@ -58,21 +58,54 @@
                     </p>
                 </div>
                 <div class="mt-4 lg:mt-0 lg:ml-auto">
-                    <button class="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">Editar
+                    <button class="bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-800">Editar
                         Perfil</button>
                 </div>
             </div>
         </div>
 
+        <!-- Book List -->
+        <div>
+            <h2 class="text-xl font-bold mb-4">Livros Disponíveis para Troca</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Book Item -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="assets/a-garota-do-lago.jpg" alt="Capa do Livro"
+                        class="w-48 h-72 m-auto object-fit rounded-lg mb-4">
+                    <h3 class="text-lg font-bold">A garota do lago</h3>
+                    <p class="text-gray-600">Charlie Donlea</p>
+                    <p class="text-gray-600 mb-4">A Garota do Lago", com sua trama intricada e personagens profundamente
+                        construídos, capturou minha atenção desde as primeiras páginas. A habilidade do autor em tecer
+                        suspense e mistério através de uma narrativa fluida e cativante faz deste livro uma leitura
+                        obrigatória para os fãs do gênero.</p>
+                    <a href="troca.html"
+                        class="mt-8 bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-800">Trocar</a>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="assets/O livro que você gostaria.jpg" alt="Capa do Livro"
+                        class="w-48 h-72 m-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold">O livro que você gostaria que seus pais tivessem lido</h3>
+                    <p class="text-gray-600">Philippa Perry </p>
+                    <p class="text-gray-600">Trata‑se de um livro sobre como criamos laços com nossos filhos, o que
+                        atrapalha a criação de uma relação de maior proximidade e o que pode contribuir para isso.</p>
+                    <button class="mt-4 bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-800">Trocar</button>
+                </div>
+
+
+                <!-- Repeat Book Item as needed -->
+            </div>
+        </div>
+
         <!-- Feed de Publicações -->
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8 mt-8">
             <h2 class="text-2xl font-bold mb-4">Feed de Publicações</h2>
             <form action="#" method="post" enctype="multipart/form-data" class="mb-4">
                 <textarea name="post" rows="3" placeholder="Compartilhe algo sobre o que está lendo..."
                     class="w-full p-2 border rounded-lg mb-2" required></textarea>
                 <input type="file" name="image" accept="image/*" class="mb-2">
                 <button type="submit"
-                    class="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">Publicar</button>
+                    class="bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-green-700">Publicar</button>
             </form>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-gray-100 p-4 rounded-lg shadow-md">
@@ -81,8 +114,8 @@
                     <img src="assets/o-poder-do-habito.jpg" alt="Imagem da Publicação"
                         class="w-full h-72 object-cover rounded-lg mb-2">
                     <div class="flex justify-between items-center">
-                        <button class="text-green-600 hover:underline">Comentar</button>
-                        <button class="text-green-600 hover:underline like-btn">
+                        <button class="text-gray-700 hover:underline">Comentar</button>
+                        <button class="text-gray-700 hover:underline like-btn">
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -100,8 +133,8 @@
                     <img src="assets/livro-1.jpg" alt="Imagem da Publicação"
                         class="w-full h-72 object-cover rounded-lg mb-2">
                     <div class="flex justify-between items-center">
-                        <button class="text-green-600 hover:underline">Comentar</button>
-                        <button class="text-green-600 hover:underline like-btn">
+                        <button class="text-gray-700 hover:underline">Comentar</button>
+                        <button class="text-gray-700 hover:underline like-btn">
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -134,7 +167,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-green-600 text-white py-4 mt-8">
+    <footer class="bg-gray-700 text-white py-4 mt-8">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 BookShare. Todos os direitos reservados.</p>
         </div>
